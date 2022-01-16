@@ -14,5 +14,4 @@ export const ELEMENTS = {
     valortotal:'.total > .titulo',
     validacaovalortotal:'be.visible',
     btnfinalizarcompra:'.span12 > .principal',
-
 }

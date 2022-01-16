@@ -7,7 +7,6 @@ class EscolherProduto {
         cy.get(el.btncomprar).click();
         cy.get(el.paginacarrinho).should(el.validacaopaginacarrinho,'Carrinho');
     }
-
     cep(){
         cy.get(el.calcularfrete).clear().type('83709150')
             .should(el.validacaocalcularfrete,'83709150');
@@ -16,9 +15,8 @@ class EscolherProduto {
         cy.get('body').then((body) => {
             if (body.find(el.btnapagarcupom).length > 0) {
                 cy.get(el.btnapagarcupom).click();
-            }
+    }
         });
-
         cy.get(el.campocupom).type('10OFF');
         cy.get(el.btnusarcupom)
             .should(el.validacaobtnusarcupom,'Usar cupom')

@@ -8,22 +8,21 @@ import LogadoSucesso from "../pages/Login/LogadoSucesso";
 
 /* global Then, When, Given */
 
-Given('Estou navegando na loja', () => {
+Given('o cliente esta navegando na loja', () => {
     AcessoPagina.acessarPagina();
     AcessoPagina.validarPagina();
-    
-    
 })
-When('preencho os dados de login com usuario valido',() => {
+
+When('preenche os dados de login com usuario valido',() => {
     AcessoCadastro.acessarPaginaCadastro();
     LoginValido.preenchendoEmailLogin();
     LoginValido.preenchendoSenhaLogin();
 })
 
-And('clico para realizar login', () => {
+And('clica para realizar login', () => {
     ClicarParaLogin.clicarProsseeguir();
 })
 
-Then ('o sistema realiza o meu login com sucesso', () => {
+Then ('o sistema realiza o login com sucesso', () => {
     LogadoSucesso.sucessoLogin();
 })

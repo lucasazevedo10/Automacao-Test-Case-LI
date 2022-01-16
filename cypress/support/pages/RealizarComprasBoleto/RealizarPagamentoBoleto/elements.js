@@ -11,5 +11,4 @@ export const ELEMENTS = {
     validacaobtnfinalizarcompra:'be.visible',
     txtboletopronto:'#mensagemBoleto > h3',
     validacaotxtboletopronto:'be.visible',
-
 }

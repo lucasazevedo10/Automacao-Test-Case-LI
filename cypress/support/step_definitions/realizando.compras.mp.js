@@ -5,16 +5,14 @@ import RealizarPagamentoMp from "../pages/RealizandoComprasMp/RealizarPagamentoM
 
 /* global Then, When, Given */
 
-
-And('seleciono produto para comprar adicionando cupom de desconto', () => {
+And('seleciona produto para comprar adicionando cupom de desconto', () => {
     EscolherProduto.escolhendoProduto();
     EscolherProduto.cep();
     EscolherProduto.adiocionandoCupom();
     EscolherProduto.clicarFinalizarCompra();
-
 })
 
-Then ('realizo o pagamento via mercado pago finalizando a compra com sucesso', () => {
+Then ('realiza o pagamento via mercado pago finalizando a compra com sucesso', () => {
     RealizarPagamentoMp.enderecoEntrega();
     RealizarPagamentoMp.validandoCampos();
 })

@@ -5,7 +5,5 @@ class AcessoCadastro {
         cy.get(el.btnbemvindo).click()
          .should(el.validação,'bem-vindo cor-secundaria');
     }
-
 }
-
 export default new AcessoCadastro();

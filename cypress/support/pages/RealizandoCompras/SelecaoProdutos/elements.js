@@ -28,5 +28,4 @@ export const ELEMENTS = {
     cupomfretegratisaplicado:'.cupom-valor > .cor-secundaria',
     validacaocupomfretegratisaplicado:'be.visible',
     btnfinalizarcompra:'.span12 > .principal',
-    
 }

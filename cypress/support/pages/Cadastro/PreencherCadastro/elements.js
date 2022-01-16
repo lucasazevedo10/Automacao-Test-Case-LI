@@ -32,5 +32,4 @@ export const ELEMENTS = {
     validacaocidade:'be.visible',
     estado:'#id_estado',
     validacaoestado:'be.visible',
-
 }

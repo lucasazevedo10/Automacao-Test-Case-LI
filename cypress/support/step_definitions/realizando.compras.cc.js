@@ -11,33 +11,29 @@ import RealizarPagamento from "../pages/RealizandoCompras/RealizarPagamento";
 
 /* global Then, When, Given */
 
-Given('Estou navegando na loja logado', () => {
+Given('o cliente esta navegando na loja logado', () => {
     AcessoPagina.acessarPagina();
     AcessoPagina.validarPagina();
     AcessoCadastro.acessarPaginaCadastro();
     LoginValido.preenchendoEmailLogin();
     LoginValido.preenchendoSenhaLogin();
     ClicarParaLogin.clicarProsseeguir();
-    LogadoSucesso.sucessoLogin();
-    
+    LogadoSucesso.sucessoLogin();   
 })
 
-When('estou na pagina de produtos', () => {
+When('esta na pagina de produtos', () => {
     PaginaProdutos.clicarStore();
 })
 
-And('seleciono produtos para comprar adicionando cupons de desconto', () => {
+And('seleciona produtos para comprar adicionando cupons de desconto', () => {
     SelecaoProdutos.selecionarProdutos();
     SelecaoProdutos.selecionarOutroProduto();
     SelecaoProdutos.validacaoCep();
     SelecaoProdutos.removerProduto();
     SelecaoProdutos.adiocionarCupom();
     SelecaoProdutos.clicarFinalizarCompra();
-
-
 })
 
-Then('realizo o pagamento com cartão de crédito finalizando a compra com sucesso', () => {
-    RealizarPagamento.validandoCampos();
-    
+Then('realiza o pagamento com cartão de crédito finalizando a compra com sucesso', () => {
+    RealizarPagamento.validandoCampos();  
 })

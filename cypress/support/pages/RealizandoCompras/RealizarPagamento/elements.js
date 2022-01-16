@@ -23,8 +23,5 @@ export const ELEMENTS = {
     validacaovalorfinal:'#escolha-cartao',
     btnfinalizarcompra:'#finalizarCompra',
     validacaobtnfinalizarcompra:'be.visible',
-
-
-
 }
 

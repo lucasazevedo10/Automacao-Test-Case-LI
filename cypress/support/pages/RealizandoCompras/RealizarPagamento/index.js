@@ -28,6 +28,4 @@ class RealizarPagamento {
             .should('be.visible','Fechar').click();        
      }
     }
-
-
 export default new RealizarPagamento();

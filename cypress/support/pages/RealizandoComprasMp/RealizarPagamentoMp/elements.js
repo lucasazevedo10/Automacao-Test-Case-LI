@@ -10,8 +10,5 @@ export const ELEMENTS = {
     validacaoselecaomercadopago:'be.checked',
     btnfinalizarcompra:'#finalizarCompra',
     validacaobtnfinalizarcompra:'be.visible'
-    
-
-
 }
 

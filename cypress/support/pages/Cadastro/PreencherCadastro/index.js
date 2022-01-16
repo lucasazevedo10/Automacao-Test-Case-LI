@@ -1,14 +1,11 @@
-
-
 const el = require('./elements').ELEMENTS
-
 
 class PreencherCadastro {
     preenchendoCadastro(){
-        cy.get(el.idconfirmacaoemail).type('marcos1023@gmail.com')
-            .should(el.validacaoemail,'marcos1023@gmail.com');
-        cy.get(el.senha).type('marcos1021');
-        cy.get(el.confirmacaosenha).type('marcos1023');
+        cy.get(el.idconfirmacaoemail).type('marcos2358@gmail.com')
+            .should(el.validacaoemail,'marcos2358@gmail.com');
+        cy.get(el.senha).type('marcos2358');
+        cy.get(el.confirmacaosenha).type('marcos2358');
         cy.get(el.checkpf).click();
         cy.get(el.nome).type('Marcos Almeida Gonçalves')
             .should(el.validacaonome,'Marcos Almeida Gonçalves');
